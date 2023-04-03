@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import "../css/Login.css"
 
-import "./Login.css"
-
-const Login = () => {
+const Login = ({ onLogin }) => {
 
   //comentando para ver cambios 
   const [register, setRegister] = useState(false);
@@ -14,52 +13,55 @@ const Login = () => {
     console.log(name);
     console.log(email);
     console.log(password);
+    onLogin();
+    
   }
 
   return (
-    <div class="form-box">
-      <form action="">
-        {!register ?
-          <h2>Login</h2> :
-          <h2>Register</h2>
-        }
+    <div className="login">
+      <div class="form-box">
+        <form action="">
+          {!register ?
+            <h2>Login</h2> :
+            <h2>Register</h2>
+          }
 
-        {register ?
+          {register ?
+            <div class="inputbox">
+
+              <input type="text" required onChange={(e) => setName(e.target.value)} />
+              <label for="">Name</label>
+            </div> :
+            <div></div>
+          }
+
           <div class="inputbox">
 
-            <input type="text" required onChange={(e) => setName(e.target.value)}/>
-            <label for="">Name</label>
-          </div> :
-          <div></div>
-        }
+            <input type="email" required onChange={(e) => setEmail(e.target.value)} />
+            <label for="">Email</label>
+          </div>
+          <div class="inputbox">
 
-        <div class="inputbox">
-
-          <input type="email" required onChange={(e) => setEmail(e.target.value)}/>
-          <label for="">Email</label>
-        </div>
-        <div class="inputbox">
-
-          <input type="password" required onChange={(e) => setPassword(e.target.value)}/>
-          <label for="">Password</label>
-        </div>
-        <div class="forget">
-          <label for=""><input type="checkbox" />Remember Me</label>
-        </div>
-        {!register ?
-          <button className="btnLogin" onClick={data}>Log in</button> :
-          <button className="btnLogin" onClick={data}>Register</button>
-        }
-
-        <div class="register">
+            <input type="password" required onChange={(e) => setPassword(e.target.value)} />
+            <label for="">Password</label>
+          </div>
+          <div class="forget">
+            <label for=""><input type="checkbox" />Remember Me</label>
+          </div>
           {!register ?
-            <p>Don't have a account <button className="btnNewAccount" onClick={() => setRegister(true)}>Register</button></p> :
-            <p>Already have a account <button className="btnNewAccount" onClick={() => setRegister(false)}>Login</button></p>
+            <button className="btnLogin" onClick={data}>Log in</button> :
+            <button className="btnLogin" onClick={data}>Register</button>
           }
-        </div>
-      </form>
-    </div>
 
+          <div class="register">
+            {!register ?
+              <p>Don't have a account <button className="btnNewAccount" onClick={() => setRegister(true)}>Register</button></p> :
+              <p>Already have a account <button className="btnNewAccount" onClick={() => setRegister(false)}>Login</button></p>
+            }
+          </div>
+        </form>
+      </div>
+    </div>
 
   )
 }
