@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../img/back5.jpg");
+  background-image: url("../assets/back5.jpg"); /*background-image: radial-gradient(circle, #99F0FF, #9D8BFF);*/
   background-size: cover;
 }
 
