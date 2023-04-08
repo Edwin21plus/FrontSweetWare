@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "../css/Card.css";
+import "../css/CardProduct.css";
 
-function Card({ imageSource, title, text, url }) {
+function CardProduct({ imageSource, title, text, url }) {
   return (
-    <div className="card-box  text-center bg-light animate__animated animate__fadeInUp">
+    <div className="card h-100  text-center bg-light animate__animated animate__fadeInUp">
       <div className="overflow">
         <img src={imageSource} alt="a wallpaper" className="card-img" />
       </div>
@@ -22,11 +22,11 @@ function Card({ imageSource, title, text, url }) {
   );
 }
 
-Card.propTypes = {
+CardProduct.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string,
   url: PropTypes.string,
   imageSource: PropTypes.string
 };
 
-export default Card;
+export default CardProduct;

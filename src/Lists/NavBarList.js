@@ -3,7 +3,7 @@ import {FaCartPlus, FaUserTie} from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
-export const NavBarData = [
+export const NavBarList = [
   {
     title: 'Inicio',
     path: '/',

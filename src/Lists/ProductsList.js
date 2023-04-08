@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import CardProduct from "../components/CardProduct";
 
 import image1 from "../assets/back1.jpg";
 import image2 from '../assets/back2.jpg'
@@ -27,16 +27,37 @@ const cards = [
     url: "https://youtube.com/fazttech",
     text: "$ 30",
   },
+  {
+    id: 4,
+    title: "Pastel1",
+    image: image1,
+    url: "https://faztweb.com",
+    text: "$ 10",
+  },
+  {
+    id: 5,
+    title: "Pastel2",
+    image: image2,
+    url: "https://blog.faztweb.com",
+    text: "$ 20",
+  },
+  {
+    id: 6,
+    title: "Pastel3",
+    image: image3,
+    url: "https://youtube.com/fazttech",
+    text: "$ 30",
+  },
   
 ];
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-center align-items-center h-100">
-      <div className="row">
+    <div className="container">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
         {cards.map(({ title, image, url, id, text }) => (
-          <div className="col-md-4" key={id}>
-            <Card imageSource={image} title={title} url={url}  text={text}/>
+          <div className="col-sm-12  col-md-5 col-lg-4 col-xl-3" key={id}>
+            <CardProduct imageSource={image} title={title} url={url}  text={text}/>
           </div>
         ))}
       </div>

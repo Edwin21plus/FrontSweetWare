@@ -1,6 +1,6 @@
 import React from 'react'
 import EmployeesList from '../Lists/EmployeesList.js';
-import '../css/Employees.css';
+import '../css/CardPerson.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const Employees = () => {

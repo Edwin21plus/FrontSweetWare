@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import CardPerson from "../components/CardPerson";
 
-const EmployeesList = () => {
+const ClientsList = () => {
   const [persons, setPersons] = useState([
     {
       id: 1,
       name: "Kevin",
-      role: "ADMIN ROLE",
       img: "https://bootdey.com/img/Content/avatar/avatar2.png",
       password: "password",
       email: "correo5@correo.com",
@@ -16,7 +15,6 @@ const EmployeesList = () => {
     {
       id: 2,
       name: "Alex",
-      role: "Backend Developer",
       img: "https://bootdey.com/img/Content/avatar/avatar3.png",
       password: "password",
       email: "correo5@correo.com",
@@ -26,7 +24,6 @@ const EmployeesList = () => {
     {
       id: 3,
       name: "Ben",
-      role: "Designer",
       img: "https://bootdey.com/img/Content/avatar/avatar4.png",
       password: "password",
       email: "correo5@correo.com",
@@ -36,7 +33,6 @@ const EmployeesList = () => {
     {
       id: 4,
       name: "Ben",
-      role: "Designer",
       img: "https://bootdey.com/img/Content/avatar/avatar4.png",
       password: "password",
       email: "correo5@correo.com",
@@ -46,7 +42,6 @@ const EmployeesList = () => {
     {
       id: 5,
       name: "Ben",
-      role: "Designer",
       img: "https://bootdey.com/img/Content/avatar/avatar4.png",
       password: "password",
       email: "correo5@correo.com",
@@ -56,7 +51,6 @@ const EmployeesList = () => {
     {
       id: 6,
       name: "Ben",
-      role: "Designer",
       img: "https://bootdey.com/img/Content/avatar/avatar4.png",
       password: "password",
       email: "correo5@correo.com",
@@ -73,7 +67,6 @@ const EmployeesList = () => {
             key={person.id}
             name={person.name}
             img={person.img}
-            role={person.role}
             email={person.email}
             direccion={person.direccion}
             telefono={person.telefono}
@@ -84,4 +77,4 @@ const EmployeesList = () => {
   );
 };
 
-export default EmployeesList;
+export default ClientsList;

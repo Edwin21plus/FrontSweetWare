@@ -11,10 +11,12 @@
 .employees,
 .clients {
   display: flex;
-  height: 90vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  margin: 1rem;
+  margin-top: 7rem;
 }
 
 .login {
@@ -24,3 +26,30 @@
   justify-content: center;
 }
 
+.AgregarProductoButton-container {
+ 
+  padding-top: 10rem;
+}
+
+.AgregarProductoButton {
+  background-color: #FFF;
+  border: none;
+  color: white;
+  padding: 20px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: black;
+}
+
+.AgregarProductoButton:hover {
+  background-color: #F699BA;
+  transform: scale(1.07);
+}
+
+.AgregarProductoButton-icon {
+  margin-right: 8px;
+}

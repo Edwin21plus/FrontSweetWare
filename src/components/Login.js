@@ -4,10 +4,12 @@ import "../css/Login.css"
 const Login = ({ onLogin }) => {
 
   //comentando para ver cambios 
+
   const [register, setRegister] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
 
   const data = () => {
     console.log(name);
@@ -37,12 +39,12 @@ const Login = ({ onLogin }) => {
 
           <div class="inputbox">
 
-            <input type="email" required onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" placeholder=" " required onChange={(e) => setEmail(e.target.value)} />
             <label for="">Email</label>
           </div>
           <div class="inputbox">
 
-            <input type="password" required onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" placeholder=" " required onChange={(e) => setPassword(e.target.value)} />
             <label for="">Password</label>
           </div>
           <div class="forget">
