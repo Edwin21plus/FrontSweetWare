@@ -26,7 +26,7 @@ const CardPerson = (props) => {
           <p className="card-text text-secondary">
             {props.direccion + "\n" + props.email + "\n" + props.telefono}
           </p>
-          <button className="btnDetails">Details</button>
+          <button className="btnDetails">Editar</button>
         </div>
       </div>
     </div>

@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif;
+    
 }
 
 .form-box{
     position: relative;
     width: 400px;
     height: 450px;
-    background: transparent;
+    background: #FFF;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -16,37 +17,37 @@
     justify-content: center;
     align-items: center;
 
-    box-shadow: 0 1em 3em rgb(255, 255, 255);
+    box-shadow: 0 1em 3em rgb(0, 0, 0);
 
 }
 h2{
     font-size: 2em;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 .inputbox{
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;  
+    border-bottom: 2px solid #000;  
 }
-.inputbox label{
+.inputbox .label-input{
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
 }
-input:focus ~ label,
-input:not(:placeholder-shown) ~ label{
+.inputText:focus ~ .label-input,
+.inputText:not(:placeholder-shown) ~ .label-input{
 top: -5px;
 }
 
 
-.inputbox input {
+.inputbox .inputText {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -60,20 +61,20 @@ top: -5px;
 .forget{
     margin: -15px 0 15px ;
     font-size: .9em;
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: space-between;  
 }
 
-.forget label input{
+.forget .label-input .inputText{
     margin-right: 3px;
     
 }
-.forget label a{
-    color: #fff;
+.forget .label-input a{
+    color: #000;
     text-decoration: none;
 }
-.forget label a:hover{
+.forget .label-input a:hover{
     text-decoration: underline;
     color: #F375B5;
 }
@@ -81,27 +82,29 @@ top: -5px;
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #FFF;
+    background: #000;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+    color: #fff;
 }
 .btnLogin:hover { 
     transform: scale(1.07);
+    background-color: #F375B5;
    
 }
 .register{
     font-size: .9em;
-    color: #fff;
+    color: #000;
     text-align: center;
     margin: 25px 0 10px;
 }
 .btnNewAccount{
     background: transparent;
     border: none;
-    color: #fff;
+    color: #000;
     font-weight: 600;
 }
 .btnNewAccount:hover{

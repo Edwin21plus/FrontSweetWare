@@ -16,7 +16,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar1 fixed-top ">
           <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars onClick={showSidebar} color="white"/>
           </Link>
           <h2 className="titleText">{page}</h2>
         </div>
@@ -24,7 +24,7 @@ function Navbar() {
           <ul className="nav-menu-items">
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars" onClick={showSidebar}>
-                <AiIcons.AiOutlineClose />
+                <AiIcons.AiOutlineClose color='black'/>
               </Link>
             </li>
             {NavBarList.map((item, index) => {
@@ -32,7 +32,7 @@ function Navbar() {
                 <li key={index} className={item.cName}>
                   <Link to={item.path} onClick={() => setPage(item.title)}>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <span className="span-title">{item.title}</span>
                   </Link>
                 </li>
               );

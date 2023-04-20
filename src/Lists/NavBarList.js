@@ -7,37 +7,37 @@ export const NavBarList = [
   {
     title: 'Inicio',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiIcons.AiFillHome color='black'/>,
     cName: 'nav-text'
   },
   {
     title: 'Ventas',
     path: '/sales',
-    icon: <IoIcons.IoIosPaper />,
+    icon: <IoIcons.IoIosPaper color='black'/>,
     cName: 'nav-text'
   },
   {
     title: 'Productos',
     path: '/products',
-    icon: <FaCartPlus />,
+    icon: <FaCartPlus color='black'/>,
     cName: 'nav-text'
   },
   {
     title: 'Clientes',
     path: '/clients',
-    icon: <IoIcons.IoMdPeople />,
+    icon: <IoIcons.IoMdPeople color='black'/>,
     cName: 'nav-text'
   },
   {
     title: 'Empleados',
     path: '/employees',
-    icon: <FaUserTie />,
+    icon: <FaUserTie color='black'/>,
     cName: 'nav-text'
   },
   {
     title: 'Support',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <IoIcons.IoMdHelpCircle color='black'/>,
     cName: 'nav-text'
   }
 ];

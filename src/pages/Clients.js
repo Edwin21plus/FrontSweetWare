@@ -1,13 +1,16 @@
-import React from 'react'
-import ClientsList from '../Lists/ClientsList'
+import React from "react";
+import ClientsList from "../Lists/ClientsList";
+import BtnCreate from "../components/BtnCreate";
+
 const Clients = () => {
   return (
-    <div className='clients'>
-    <div className='container'>
-      <ClientsList/>
-    </div>
-  </div>
-  )
-}
+    <>
+      <BtnCreate text={"Cliente"}/>
+      <div className="clients">
+        <ClientsList />
+      </div>
+    </>
+  );
+};
 
-export default Clients
+export default Clients;

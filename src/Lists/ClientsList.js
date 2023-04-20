@@ -60,19 +60,21 @@ const ClientsList = () => {
   ]);
 
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-4">
-      {persons.map((person) => {
-        return (
-          <CardPerson
-            key={person.id}
-            name={person.name}
-            img={person.img}
-            email={person.email}
-            direccion={person.direccion}
-            telefono={person.telefono}
-          />
-        );
-      })}
+    <div className="container">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        {persons.map((person) => {
+          return (
+            <CardPerson
+              key={person.id}
+              name={person.name}
+              img={person.img}
+              email={person.email}
+              direccion={person.direccion}
+              telefono={person.telefono}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

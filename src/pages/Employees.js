@@ -1,16 +1,18 @@
-import React from 'react'
-import EmployeesList from '../Lists/EmployeesList.js';
-import '../css/CardPerson.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import React from "react";
+import EmployeesList from "../Lists/EmployeesList.js";
+import "../css/CardPerson.css";
+import "bootstrap/dist/css/bootstrap.css";
+import BtnCreate from "../components/BtnCreate.js";
 
 const Employees = () => {
   return (
-    <div className='employees'>
-      <div className='container'>
-        <EmployeesList/>
+    <>
+      <BtnCreate text={"Empleado"}/>
+      <div className="employees">
+        <EmployeesList />
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Employees
+export default Employees;

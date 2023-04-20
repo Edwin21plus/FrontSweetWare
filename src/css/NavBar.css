@@ -20,7 +20,7 @@
 }
 
 .nav-menu {
-  background: transparent;
+  background: #fff;
   backdrop-filter: blur(30px);
   box-shadow: 0 1em 3em rgb(0, 0, 0);
 
@@ -52,7 +52,7 @@
 
 .nav-text a  {
   text-decoration: none;
-  color: #f5f5f5;
+  color: #000;
   font-size: 18px;
   width: 95%;
   height: 100%;
@@ -87,7 +87,7 @@
   align-items: center;
 }
 
-span {
+.span-title {
   margin-left: 16px;
 }
 

@@ -16,7 +16,7 @@ function CardProduct({ imageSource, title, text, url }) {
             ? text
             : "$ -"}
         </p>
-        <button className="btnDetails">Details</button>
+        <button className="btnDetails">Editar</button>
       </div>
     </div>
   );

@@ -1,22 +1,13 @@
 import React from "react";
-import Cards from "../Lists/ProductsList";
-import { AiOutlineAppstoreAdd } from "react-icons/ai";
+import ProductsList from "../Lists/ProductsList";
+import BtnCreate from "../components/BtnCreate";
 
 const Products = () => {
   return (
     <>
-      <div className="container">
-        <div className="row justify-content-end AgregarProductoButton-container">
-          <div className="col-sm-6  col-md-6 col-lg-3 col-xl-2">
-            <button className="AgregarProductoButton">
-              <AiOutlineAppstoreAdd className="AgregarProductoButton-icon" />
-              Agregar producto
-            </button>
-          </div>
-        </div>
-      </div>
+      <BtnCreate text={"Producto"}/>
       <div className="products">
-        <Cards></Cards>
+        <ProductsList />
       </div>
     </>
   );
